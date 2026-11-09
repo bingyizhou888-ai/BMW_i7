@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { Hand, X } from "lucide-react";
+import { X } from "lucide-react";
+import MLogo from "./MLogo";
 import {
   MAX_NAME_LENGTH,
   OPEN_EVT,
@@ -67,7 +68,7 @@ export default function WelcomeDialog() {
         </button>
 
         <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5">
-          <Hand size={18} className="text-neutral-200" />
+          <MLogo height={9} />
         </span>
         <h2 id="welcome-title" className="mt-5 text-2xl font-light tracking-tight">
           歡迎來到 BMW i7

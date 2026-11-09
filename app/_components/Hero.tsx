@@ -9,6 +9,8 @@ export default function Hero() {
   return (
     <section id="overview" className="relative overflow-hidden bg-black">
       {/* 全幅背景 */}
+      {/* 手機：背景只鋪在上方文字區，避免被直排卡片撐高後過度放大而模糊；桌機（sm 以上）維持鋪滿整個區塊 */}
+      <div className="absolute inset-x-0 top-0 h-[36rem] overflow-hidden sm:bottom-0 sm:h-auto">
       <Parallax background range={18}>
       <Image
         src={heroBg}
@@ -16,11 +18,12 @@ export default function Hero() {
         fill
         preload
         placeholder="blur"
-        sizes="100vw"
+        sizes="(min-width: 640px) 100vw, 1200px"
         className="object-cover object-center opacity-60 -translate-y-[10%] -rotate-[1.2deg] scale-108"
       />
       </Parallax>
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black" />
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-6 pt-40 pb-16 sm:pt-48">
         <div className="max-w-2xl">
