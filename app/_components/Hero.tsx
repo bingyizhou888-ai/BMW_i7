@@ -17,7 +17,7 @@ export default function Hero() {
         preload
         placeholder="blur"
         sizes="100vw"
-        className="object-cover object-[center_80%] opacity-60"
+        className="object-cover object-center opacity-60 -translate-y-[10%] -rotate-[1.2deg] scale-108"
       />
       </Parallax>
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black" />
