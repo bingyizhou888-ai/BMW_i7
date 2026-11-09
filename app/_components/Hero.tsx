@@ -17,7 +17,7 @@ export default function Hero() {
         preload
         placeholder="blur"
         sizes="100vw"
-        className="object-cover object-center opacity-60"
+        className="object-cover object-[center_80%] opacity-60"
       />
       </Parallax>
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black" />
@@ -27,15 +27,15 @@ export default function Hero() {
           <WelcomeBadge variant="hero" />
           <p className="flex items-center gap-2 font-mono text-xs text-neutral-300">
             <span className="h-1 w-1 rounded-full bg-neutral-300" />
-            全新 BMW i7 · 純電豪華旗艦
+            BMW i7 · 三款豪華旗艦
           </p>
           <h1 className="mt-5 text-4xl font-light leading-[1.1] tracking-tight text-white sm:text-6xl">
-            純電豪華旗艦的
+            純電豪華旗艦車
             <br />
             完整進化
           </h1>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-neutral-300">
-            揮別引擎聲浪，BMW i7 以近乎無聲的純電動力，包覆你於行政級豪華座艙之中。三種動力、三種個性，總有一部屬於你。
+            揮別引擎聲浪，以近乎無聲的純電動力，提升車駕體驗與豪華座艙的沉浸體感。完整的你，配得三種型號動力的選擇
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <div className="flex">
